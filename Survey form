@@ -1,0 +1,109 @@
+** Survey Form**
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>survey form</title>
+     <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+
+    <!--title of survey form-->
+
+    <h1 id="title">DSTV Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+
+      <!--labels-->
+
+        <div><label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        </div>
+        <div><label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+        </div>
+        <div><label id="number-label">Age(optional) <input id="number" type="number" placeholder="Age" min="10" max="99" required /></label>
+        </div>
+        <label id="gender-label">Gender
+        
+        <!--dropdowns-->
+
+        <select id="dropdown" name="gender"required>
+          <option>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        </label>
+        <div>
+       <label id="country-label" >Country
+        
+        <!--dropdowns-->
+
+         <select id="dropdown" name="country" required>
+           <option>Select Country</option>
+           <option>South Africa</option>
+           <option>Nigeria</option>
+           <option>Kenya</option>  
+           <option>Ghana</option>  
+           <option>Angola</option>  
+           <option>Namibia</option>
+           <option>Zimbabwe</option>  
+           <option>Zambia</option>  
+           <option>Uganda</option>  
+           <option>Mauritius</option>  
+           <option>Mozambique</option>  
+           <option>Malawi</option>  
+           <option>Tanzania</option>  
+           <option>Lesotho</option>  
+           <option>Ethiopia</option>  
+           <option>Republic of the Congo</option>  
+           <option> Democratic Republic of Congo</option>  
+           <option>Gabon</option>  
+           <option>Eswatini</option>  
+           <option>Botswana</option>
+           </select>
+           </label>
+           </div> 
+
+    <p>What type of DSTV decorder do you use?</p>
+
+    <!--Radio buttons-->
+
+    <input type="radio" value="Explora ultra" name="decorder">Explora Ultra<br>
+    <input type="radio" value="Explora 3A/3B" name="decorder">Explora 3A/3B<br>
+    <input type="radio" value="Single view HD" name="decorder">Single view HD<br>
+    <input type="radio" value="HD PVR 4 turner" name="decorder">HD PVR 4 turner<br>
+
+    <p>What type of DSTV package do you subscribe?</p>
+
+    <!--Drop down box-->
+
+    <select id="dropdown" name="package">
+      <option>Select package</option>
+      <option>DSTV Premium</option>
+      <option>DSTV Compact Plus</option>
+      <option>DSTV Compact</option>
+      <option>DSTV Family</option>
+      <option>DSTV Family</option>
+      <option>Easy view</option>
+      </select>
+
+      <p>What do you enjoy watching the most?</p>
+
+      <!--Checkboxes-->
+
+       <label><input type="checkbox" value="genre" name="shows">
+Sports<br>
+        <input type="checkbox" value="genre" name="shows">Documentaries<br>
+         <input type="checkbox" value="genre" name="shows">International News<br>
+          <input type="checkbox" value="genre" name="shows">Local News<br>
+           <input type="checkbox" value="genre" name="shows">Telenovelas<br>
+            <input type="checkbox" value="genre" name="shows">Bollywood<br>
+             <input type="checkbox" value="genre" name="shows">Music Channels<br>
+              <input type="checkbox" value="genre" name="shows">Movies<br>
+              <input type="checkbox" value="genre" name="shows">Other(Specify)<textarea type="textarea" name="textarea" rows="4" cols="40"></textarea>
+</label>
+  <div><input id="submit" type="submit" value="submit"></div>
+      
+      </form>
+    </body>
+    </html>
